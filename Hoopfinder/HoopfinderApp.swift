@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
-struct HoopfinderApp: App {
+struct HoopFinderApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: FavoriteItem.self)
     }
 }
